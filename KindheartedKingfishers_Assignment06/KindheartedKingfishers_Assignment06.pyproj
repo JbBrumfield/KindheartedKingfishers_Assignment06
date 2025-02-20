@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>10667354-8d91-451d-b06f-4ed625a059a5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>KindheartedKingfishers_Assignment06.py</StartupFile>
+    <StartupFile>LI_Main_Package\Main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,25 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="KindheartedKingfishers_Assignment06.py" />
+    <Compile Include="DD_Package\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JB_Package\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LI_Main_Package\Main.py" />
+    <Compile Include="LI_Main_Package\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LV_Package\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DD_Package\" />
+    <Folder Include="JB_Package\" />
+    <Folder Include="LI_Main_Package\" />
+    <Folder Include="LV_Package\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
