@@ -31,6 +31,9 @@
     <Compile Include="LI_Main_Package\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="LV_Package\stadium.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="LV_Package\__init__.py">
       <SubType>Code</SubType>
     </Compile>
