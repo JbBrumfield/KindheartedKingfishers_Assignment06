@@ -24,6 +24,9 @@
     <Compile Include="DD_Package\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="JB_Package\team.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="JB_Package\__init__.py">
       <SubType>Code</SubType>
     </Compile>
