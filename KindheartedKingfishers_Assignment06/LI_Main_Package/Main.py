@@ -12,7 +12,7 @@
 
 from JB_Package.team import *
 from LV_Package.stadium import *
-
+from DD_Package.player import Player
 if __name__ == "__main__":
  
     bengals_stadium = Stadium("Paycor Stadium", 65515, "Cincinnati, OH")
@@ -39,3 +39,16 @@ if __name__ == "__main__":
  
     bengals_team.remove_player("Tee Higgins")
     print("Updated Bengals Roster:", bengals_team.display_roster())
+
+    # Create Player objects
+    joe_burrow = Player("Joe Burrow", "Quarterback", 9, 27)
+    jamarr_chase = Player("Ja'Marr Chase", "Wide Receiver", 1, 24)
+    joe_mixon = Player("Joe Mixon", "Running Back", 28, 27)
+
+    # Print the players
+    print(joe_burrow)
+    print(jamarr_chase)
+    print(joe_mixon)
+
+    joe_mixon.update_position("Fullback") 
+    print(joe_mixon)
