@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DD_Package\player.py" />
     <Compile Include="DD_Package\__init__.py">
       <SubType>Code</SubType>
     </Compile>
