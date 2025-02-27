@@ -15,22 +15,27 @@ from LV_Package.stadium import *
 
 if __name__ == "__main__":
  
-    stadium = Stadium("Grand Arena", 50000, "New York")
+    bengals_stadium = Stadium("Paycor Stadium", 65515, "Cincinnati, OH")
+    
+    print(bengals_stadium)
+    print(repr(bengals_stadium))
 
-    print(stadium)
-    
-    stadium.host_event("Championship Match")
-    print(stadium)  
-    
-    team = Team("Warriors", "Coach Smith")
-    
-    print(team)
-    
-    team.add_player("John Doe")
-    team.add_player("Jane Smith")
-    
-    print(f"Roster: {team.display_roster()}")
+    bengals_stadium.capacity(70000) 
 
-    team.remove_player("John Doe")
+    bengals_stadium.host_event("Cincinnati Bengals vs. Pittsburgh Steelers")
+    print(bengals_stadium)
     
-    print(f"Updated Roster: {team.display_roster()}")
+    bengals_team = Team("Cincinnati Bengals", "Zac Taylor")
+
+    print(bengals_team)
+    print(repr(bengals_team))
+    
+    bengals_team.add_player("Joe Burrow", "Quarterback")  
+    bengals_team.add_player("Ja'Marr Chase", "Wide Receiver")
+    bengals_team.add_player("Tee Higgins", "Wide Receiver")
+    bengals_team.add_player("Joe Mixon", "Running Back")
+
+    print("Bengals Roster:", bengals_team.display_roster())
+ 
+    bengals_team.remove_player("Tee Higgins")
+    print("Updated Bengals Roster:", bengals_team.display_roster())
