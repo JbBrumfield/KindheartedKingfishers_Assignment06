@@ -70,24 +70,28 @@ class Team:
         Returns a detailed string rep of the team object
         """
         return f"Team(name={self.name}, coach={self.coach}, roster={self.roster})"
-    def add_player(self, player):
+    def add_player(self, player_name, player):
         """
         Adds a player to the team's roster
         @param player is added
         """
         self.roster.append(player)
-        print(f"{player.name} added to {self.name}.")
-    def remove_player(self, player):
+        print(f"{player_name} added to {self.name}.")
+    def remove_player(self, player_name):
         """
         Removes a player from the team's roster
         @param player is removed
         """
-        self.roster.remove(player)
-        print(f"{player.name} removed from {self.name}.")
+        if player_name in self.roster:
+            self.roster.remove(player_name)
+            print(f"{player_name} removed from {self.name}.")
+        else:
+            print(f"{player_name} is not in the roster.")
+     
     def display_roster(self):
         """
         Displays the list of players currently on the active roster
         @param
         returns: list of players
         """
-        return [player.name for player in self.roster]
+        return self.roster
