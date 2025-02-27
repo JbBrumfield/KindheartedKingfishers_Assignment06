@@ -1,4 +1,4 @@
-# File Name : KindheartedKingfishers_Assignment06
+# File Name : stadium.py
 # Student Name: Liam Vasey
 # email:  vaseylh@mail.uc.edu
 # Assignment Number: Assignment 06
